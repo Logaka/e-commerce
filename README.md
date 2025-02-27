@@ -32,13 +32,7 @@ source .venv/bin/activate  # macOS/Linux
 .venv\Scripts\activate  # Windows
 ```
 
-### 3. Установка зависимостей
-
-```bash
-pip install -r requirements.txt
-```
-
-### 4. Настройка базы данных
+### 3. Настройка базы данных
 
 Открой `settings.py` и замени параметры базы данных:
 
@@ -55,14 +49,14 @@ DATABASES = {
 }
 ```
 
-### 5. Применение миграций
+### 4. Применение миграций
 
 ```bash
 python manage.py makemigrations
 python manage.py migrate
 ```
 
-### 6. Создание суперпользователя
+### 5. Создание суперпользователя
 
 ```bash
 python manage.py createsuperuser
@@ -76,7 +70,7 @@ password
 ```
 
 
-### 7. Запуск сервера
+### 6. Запуск сервера
 
 ```bash
 python manage.py runserver
