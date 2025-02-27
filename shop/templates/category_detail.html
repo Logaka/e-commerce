@@ -1,0 +1,7 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <h2>{{ category.name }}</h2>
+    <a href="{% url 'category_update' category.id %}">Редактировать</a>
+    <a href="{% url 'category_delete' category.id %}">Удалить</a>
+{% endblock %}
