@@ -6,6 +6,4 @@
     <p>Цена: ${{ product.price }}</p>
     <p>Категория: {{ product.category.name }}</p>
 
-    <a href="{% url 'product_update' product.id %}">Редактировать</a>
-    <a href="{% url 'product_delete' product.id %}">Удалить</a>
 {% endblock %}
